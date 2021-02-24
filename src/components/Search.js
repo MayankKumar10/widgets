@@ -43,7 +43,7 @@ if (term && !results.length) {
 
 const renderedResults = results.map((result)=>{
 return(
-    <div key={result.pageid} className="item">
+    <div key={result.pageid} className="item" target="_blank">
      <div className="right floated content">
          <a className="ui button" href={`https://en.wikipedia.org?curid=${result.pageid}`}>Go</a>
      </div>
